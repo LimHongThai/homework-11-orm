@@ -1,4 +1,4 @@
-from Model import Assignment, Employee
+from Model import Assignment, Employee, Job, Project
 from db import session, engine
 from sqlalchemy import text
 
