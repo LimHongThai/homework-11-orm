@@ -37,6 +37,11 @@ class Assignment(Base):
     assign_charge = Column(Float)
     
 
-# class Project(Base):
-#     __tablename__ = "project"
+class Project(Base):
+    __tablename__ = "project"
+    proj_num = Column(Integer, primary_key=True)
+    proj_name = Column(String(30))
+    proj_value = Column(Integer)
+    proj_balance = Column(Float)
+    emp_num = Column(Integer, ForeignKey("employee.emp_num"))
     
